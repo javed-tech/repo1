@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="wdth=devce-wdth, tal-scale=1.0">
+    <ttle></ttle>
+</head>
+
+<body>
+    <h1>Problem/Input format</h1>
+    <script>
+        let arr = [1, 1, 1, 1, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4];
+
+        let num = 0;
+        let num1 = 0;
+        let num2 = 0;
+        let num3 = 0;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let x = arr[i];
+            if (x == 1) {
+                num = num + 1;
+                var div = Math.floor(num / 2);
+            }
+            if (x == 2) {
+                num1 = num1 + 1;
+                var div1 = Math.floor(num1 / 2);
+            }
+            if (x == 3) {
+                num2 = num2 + 1;
+                var div2 = Math.floor(num2 / 2);
+            }
+            if (x == 4) {
+                num3 = num3 + 1;
+                var div3 = Math.floor(num3 / 2);
+            }
+            let sum1 = (div + div1 + div2 + div3);
+            sum = sum1;
+        }
+        console.log("The number of pairs of unique color 1 is ", div);
+        console.log("The number of pairs of unique color 2 is ", div1);
+        console.log("The number of pairs of unique color 3 is ", div2);
+        console.log("The number of pairs of unique color 4 is ", div3);
+        console.log("Total number of matching pairs of socks that rohit can sell is ", sum);
+
+
+    </script>
+</body>
+
+</html>
